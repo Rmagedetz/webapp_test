@@ -10,6 +10,8 @@ if tg_id:
     st.write(f'Telegram ID: {tg_id}')
 else:
     st.write('Telegram ID not provided.')
-st.button("Push")
+
+if tg_id == "12345":
+    st.write("вы вошли")
 # Пример вывода других данных
 st.write('This is your Streamlit app with Telegram integration.')
