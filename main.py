@@ -13,5 +13,6 @@ else:
 
 if tg_id == "12345":
     st.write("вы вошли")
+
 # Пример вывода других данных
 st.write('This is your Streamlit app with Telegram integration.')
