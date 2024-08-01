@@ -23,7 +23,7 @@ def main():
 
     # Получите URL-параметры
     auth_data = st.query_params.get('auth_data', '')
-
+    st.write(auth_data)
     if auth_data:
         secret_key = hashlib.sha256(API_TOKEN.encode('utf-8')).digest()
         if verify_telegram_auth_data(auth_data, secret_key):
